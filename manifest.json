@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "X (Twitter) Video Downloader",
+  "version": "15.15",
+  "description": "Download videos and images from X (Twitter) and other social media platforms",
+  
+  "permissions": [],
+  
+  "host_permissions": [
+    "https://www.x.com/*",
+    "http://www.x.com/*",
+    "https://www.twitter.com/*",
+    "http://www.twitter.com/*",
+    "https://www.t.co/*",
+    "http://www.t.co/*",
+    "https://www.pscp.tv/*",
+    "http://www.pscp.tv/*",
+    "https://www.tweetdeck.com/*",
+    "http://www.tweetdeck.com/*",
+    "https://www.twitteroauth.com/*",
+    "http://www.twitteroauth.com/*",
+    "https://www.twitter.jp/*",
+    "http://www.twitter.jp/*",
+    "https://www.vine.co/*",
+    "http://www.vine.co/*",
+    "https://www.x.jp/*",
+    "http://www.x.jp/*",
+    "https://www.twimg.com/*",
+    "http://www.twimg.com/*",
+    "https://www.periscope.tv/*",
+    "http://www.periscope.tv/*",
+    "https://www.twitpic.com/*",
+    "http://www.twitpic.com/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["highestquality.js"],
+      "css": ["content.css", "styles.css"]
+    }
+  ],
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

@@ -1,0 +1,115 @@
+/**
+ * X (Twitter) Video Downloader - Content Styles
+ * 
+ * CSS styles for the download button and its various states
+ */
+
+/* Main container for processed media elements */
+[data-twitter-video-downloader-extension] {
+    max-width: 100% !important;
+}
+
+[data-twitter-video-downloader-extension] > div {
+    flex: auto;
+}
+
+/* Download button base styles */
+[data-twitter-video-downloader-extension] .extension-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    order: 1;
+}
+
+/* Button container */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container {
+    display: flex;
+    position: relative;
+}
+
+/* Hover effect background */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container .extension-button-hover {
+    margin: -8px;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 9999px;
+}
+
+/* Hover state */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container .extension-button-hover:hover {
+    background-color: rgba(119, 186, 153, 0.2);
+}
+
+/* Base SVG icon styles */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg {
+    fill: currentcolor;
+    color: #77ba99; /* Green theme color */
+}
+
+/* Loading icon styles */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg.loading-icon {
+    display: none;
+    animation-timing-function: linear;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 0.75s;
+}
+
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg.loading-icon circle {
+    stroke: #77ba99;
+}
+
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg.loading-icon circle:first-child {
+    opacity: 0.2;
+}
+
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg.loading-icon circle:nth-child(2) {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 60;
+}
+
+/* Success icon styles */
+[data-twitter-video-downloader-extension] .extension-button .extension-button-container svg.success-icon {
+    display: none;
+}
+
+/* Loading state - show loading icon, hide others */
+[data-twitter-video-downloader-extension] .extension-button.loading svg.loading-icon {
+    display: flex;
+}
+
+[data-twitter-video-downloader-extension] .extension-button.loading svg.download-icon,
+[data-twitter-video-downloader-extension] .extension-button.loading svg.success-icon {
+    display: none;
+}
+
+/* Success state - show success icon, hide others */
+[data-twitter-video-downloader-extension] .extension-button.success svg.loading-icon,
+[data-twitter-video-downloader-extension] .extension-button.success svg.download-icon {
+    display: none;
+}
+
+[data-twitter-video-downloader-extension] .extension-button.success svg.success-icon {
+    display: flex;
+}
+
+/* Spin animation for loading icon */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

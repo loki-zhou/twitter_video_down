@@ -1,0 +1,144 @@
+/**
+ * X (Twitter) Video Downloader - Additional Styles
+ * 
+ * Styles for video conference platform integration and UI elements
+ */
+
+/* Form group styling */
+.myformgroup {
+    margin-top: -20px;
+}
+
+/* Main extension icon */
+#image8 {
+    height: 34px;
+    display: flex;
+    top: 5px;
+    margin-bottom: 3px;
+    margin-left: -5px;
+    margin-right: -40px;
+    position: sticky;
+    top: 14px;
+}
+
+/* Webinar data header */
+#webinarDataHeader {
+    margin-bottom: 0px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    text-align: left;
+    color: rgb(51, 51, 51);
+    z-index: 1900;
+    width: 100%;
+    justify-content: left;
+    margin-top: -65px;
+    visibility: hidden;
+    position: sticky;
+    top: 70px;
+}
+
+/* Icon and text elements */
+#upicon {
+    margin-top: -8px;
+}
+
+#reczoom {
+    display: inline-block;
+    text-align: center;
+    margin-left: 4px;
+    color: inherit;
+}
+
+#rectext {
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#recdia {
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+    color: inherit;
+    margin-right: -3px;
+}
+
+#shead {
+    margin-left: 38px;
+}
+
+/* Recording image */
+#recordImage {
+    margin-left: 365px;
+    margin-top: 18px;
+    vertical-align: middle;
+    width: 40px;
+}
+
+/* Warning text styles */
+#warnText {
+    color: red;
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#warnunder {
+    text-decoration: underline;
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#warnMsg {
+    display: inline-block;
+    text-align: center;
+    margin-left: 8px;
+}
+
+/* Button styles */
+#recordButton {
+    margin-left: 5px;
+}
+
+#headerSpan {
+    display: block;
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#recordingButton {
+    background-color: red;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+}
+
+#recordingInput {
+    margin-left: 58px;
+    background-color: red;
+    font-weight: bold;
+}
+
+/* Input holder */
+#iholder {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 10.9%;
+}
+
+/* Checkbox styling */
+#mycheckbox {
+    width: 25px;
+    height: 25px;
+    margin-left: 96px;
+    vertical-align: top;
+    margin-top: -3px;
+}
+
+#mycheckboxtext {
+    margin-left: 5px;
+}
