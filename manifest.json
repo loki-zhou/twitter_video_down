@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "X (Twitter) Video Downloader",
-  "version": "15.15",
+  "name": "Twitter Video Downloader",
+  "version": "1.0.0",
   "description": "Download videos and images from X (Twitter) and other social media platforms",
   
   "permissions": [],
